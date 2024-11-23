@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://vitorcomin.com.br",
   "dependencies": {
+    "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -11,7 +12,11 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "craco-less": "^3.0.1",
     "gh-pages": "^6.2.0",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "less-plugin-clean-css": "^1.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -19,12 +24,15 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build-dark-theme": "lessc --clean-css src/themes/dark/dark-theme.less public/dark-theme.css",
+    "build-light-theme": "lessc --clean-css src/themes/light/light-theme.less public/light-theme.css",
+    "compile-theme": "npm run build-dark-theme && npm run build-light-theme"
   },
   "eslintConfig": {
     "extends": [
