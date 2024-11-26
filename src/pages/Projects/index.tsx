@@ -1,12 +1,6 @@
 const Projects: React.FC = () => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "92vh",
-        display: "flex",
-      }}
-    >
+    <div id="#projects">
       <div
         style={{
           height: "10%",
@@ -16,13 +10,9 @@ const Projects: React.FC = () => {
           display: "flex",
         }}
       >
-        <div
-          style={{ width: "20%", height: "3px", backgroundColor: "#D46A00" }}
-        />
+        <div className="brown-line" />
         <span style={{ fontSize: "30px", margin: "0px 10px" }}>Projetos</span>
-        <div
-          style={{ width: "20%", height: "3px", backgroundColor: "#D46A00" }}
-        />
+        <div className="brown-line" />
       </div>
     </div>
   );

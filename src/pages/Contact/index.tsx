@@ -1,12 +1,6 @@
 const Contact: React.FC = () => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "92vh",
-        display: "flex",
-      }}
-    >
+    <div id="#contact">
       <div
         style={{
           height: "10%",

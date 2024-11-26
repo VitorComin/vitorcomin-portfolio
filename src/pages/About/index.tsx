@@ -1,10 +1,8 @@
 const About: React.FC = () => {
   return (
-    <div
+    <section
+      id="#about"
       style={{
-        width: "100%",
-        height: "92vh",
-        display: "flex",
         backgroundColor: "lightgray",
       }}
     >
@@ -25,7 +23,7 @@ const About: React.FC = () => {
           style={{ width: "20%", height: "3px", backgroundColor: "#D46A00" }}
         />
       </div>
-    </div>
+    </section>
   );
 };
 
