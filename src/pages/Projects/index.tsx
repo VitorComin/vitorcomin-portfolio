@@ -1,20 +1,28 @@
+import PageTitle from "../../components/PageTitle";
+
 const Projects: React.FC = () => {
   return (
-    <div id="#projects">
+    <section
+      id="#projects"
+      style={{ marginTop: "5%", flexDirection: "column" }}
+    >
+      <PageTitle title={"Projetos"} />
       <div
         style={{
-          height: "10%",
-          width: "100%",
-          alignItems: "center",
-          justifyContent: "center",
           display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          height: "100%",
         }}
       >
-        <div className="brown-line" />
-        <span style={{ fontSize: "30px", margin: "0px 10px" }}>Projetos</span>
-        <div className="brown-line" />
+        <div className="pages-container-columns" style={{ paddingLeft: "4%" }}>
+          <img src="projeto-template.png" style={{ height: "65%" }} />
+        </div>
+        <div className="pages-container-columns" style={{ paddingRight: "4%" }}>
+          <h1>Projetos em construção...</h1>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

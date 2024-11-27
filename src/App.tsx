@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
+// import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 import Layout from "./components/Layout";
 
 const App: React.FC = () => {
