@@ -43,9 +43,10 @@ const Header: React.FC = () => {
             {"<V"} <span style={{ color: "#D46A00" }}>C</span> {" />"}
           </a>
         </div>
-        <div style={{ display: "flex" }}>
-          {sections?.map((section) => (
+        <div style={{ display: "flex", overflowX: "hidden" }}>
+          {sections?.map((section, index) => (
             <a
+              key={index}
               href={section.id}
               style={{
                 color: activeSection === section.id ? "#D46A00" : "black",

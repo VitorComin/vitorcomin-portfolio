@@ -3,6 +3,7 @@ import {
   LocationIcon,
   WorkIcon,
 } from "../../assets/icons/Icons";
+import MySkills from "../../components/MySkills";
 import PageTitle from "../../components/PageTitle";
 
 const About: React.FC = () => {
@@ -74,61 +75,10 @@ const About: React.FC = () => {
                 style={{ width: "100%", height: 2 }}
               />
             </div>
-            <span
-              style={{
-                fontSize: 18,
-                color: "#575757",
-                wordBreak: "break-word",
-                margin: "4% 0",
-                gap: "10px",
-                display: "flex",
-                flexWrap: "wrap",
-              }}
-            >
-              <img
-                src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
-                alt="React"
-              />
-              <img
-                src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
-                alt="TypeScript"
-              />
-              <img
-                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
-                alt="JavaScript"
-              />
-              <img
-                src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-                alt="CSS"
-              />
-              <img
-                src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-                alt="HTML"
-              />
-              <img
-                src="https://img.shields.io/badge/Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white"
-                alt="Ruby on Rails"
-              />
-              <img
-                src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white"
-                alt="Ruby"
-              />
-              <img
-                src="https://img.shields.io/badge/Postgres-336791?style=for-the-badge&logo=postgresql&logoColor=white"
-                alt="PostgreSQL"
-              />
-              <img
-                src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"
-                alt="Jest"
-              />
-              <img
-                src="https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white"
-                alt="Vitest"
-              />
-            </span>
+            <MySkills />
           </div>
         </div>
-        <div className="pages-container-columns">
+        <div className="pages-container-columns page-image">
           <img
             src="/template-imagem.png"
             alt="Template"

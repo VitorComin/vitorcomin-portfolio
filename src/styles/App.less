@@ -1,5 +1,6 @@
 @import "./Header.less";
 @import "./Home.less";
+@import "./Projects.less";
 
 *,
 html {
@@ -49,4 +50,24 @@ section {
   gap: 10px;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1115px) {
+  .pages-container-columns {
+    width: 100%;
+  }
+
+  section {
+    min-height: 92vh;
+    height: unset;
+    flex-direction: column;
+  }
+
+  .page-image {
+    display: none;
+  }
+
+  .page-title-container {
+    margin-bottom: 10%;
+  }
 }
