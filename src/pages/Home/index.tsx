@@ -46,7 +46,7 @@ const Home: React.FC = () => {
       </div>
       <div className="pages-container-columns page-image">
         <img
-          src="/template-imagem.png"
+          src="/foto-vitor-portfolio-v2.png"
           alt="Template"
           style={{ height: "70%" }}
         />

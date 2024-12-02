@@ -50,7 +50,14 @@ const Header: React.FC = () => {
     <header>
       <nav>
         <div>
-          <a href={"#home"} className="header-nav-logo">
+          <a
+            href={"#home"}
+            className="header-nav-logo"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScrollTo("#home");
+            }}
+          >
             {"<V"} <span style={{ color: "#D46A00" }}>C</span> {" />"}
           </a>
         </div>
