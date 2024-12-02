@@ -5,6 +5,7 @@
   "homepage": "https://vitorcomin.com.br",
   "dependencies": {
     "@craco/craco": "^7.1.0",
+    "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -21,6 +22,8 @@
     "react-dom": "^18.3.1",
     "react-flagkit": "^2.0.4",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.14.5",
+    "sweetalert2-react-content": "^5.0.7",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
