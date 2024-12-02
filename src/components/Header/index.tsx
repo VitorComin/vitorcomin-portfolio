@@ -1,23 +1,54 @@
 import { useEffect, useRef, useState } from "react";
-import { DarkModeIcon } from "../../assets/icons/Icons";
+import { ArrowUpward, DarkModeIcon } from "../../assets/icons/Icons";
 import Flag from "react-flagkit";
 import { sections } from "../../utils/configs";
 
 const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState("#home");
-  const navListRef = useRef<HTMLDivElement>(null);
-  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
+  const buttonUpRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("aqui");
+      if (headerRef.current && buttonUpRef.current) {
+        console.log("aqui2");
+        if (window.scrollY > 0) {
+          headerRef.current.classList.add("header-shadow");
+          buttonUpRef.current.classList.add("show-button-up");
+        } else {
+          headerRef.current.classList.remove("header-shadow");
+          buttonUpRef.current.classList.remove("show-button-up");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log(window.scrollY);
 
   const handleScrollTo = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       const sectionTop = section.offsetTop;
-      const offset = 8;
+      const offset = window.innerWidth <= 999 ? 0 : 8;
 
       window.scrollTo({
         top: sectionTop - (window.innerHeight * offset) / 100,
       });
     }
+  };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
@@ -37,17 +68,8 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  function handleMenuVisibility() {
-    if (navListRef.current) {
-      navListRef.current.classList.toggle("active");
-    }
-    if (mobileMenuRef.current) {
-      mobileMenuRef.current.classList.toggle("active");
-    }
-  }
-
   return (
-    <header>
+    <header ref={headerRef}>
       <nav>
         <div>
           <a
@@ -62,7 +84,7 @@ const Header: React.FC = () => {
           </a>
         </div>
         <div style={{ display: "flex", overflowX: "hidden" }}>
-          <div ref={navListRef} className={"nav-list"}>
+          <div className={"nav-list"}>
             {sections?.map((section, index) => (
               <a
                 key={index}
@@ -89,17 +111,15 @@ const Header: React.FC = () => {
           <a className="header-nav-icons">
             <DarkModeIcon />
           </a>
-          <div
-            ref={mobileMenuRef}
-            className="mobile-menu"
-            onClick={handleMenuVisibility}
-          >
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-          </div>
         </div>
       </nav>
+      <button
+        ref={buttonUpRef}
+        className="button-up"
+        onClick={handleScrollToTop}
+      >
+        <ArrowUpward />
+      </button>
     </header>
   );
 };
