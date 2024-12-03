@@ -3,18 +3,18 @@ import { ArrowUpward, DarkModeIcon } from "../../assets/icons/Icons";
 import Flag from "react-flagkit";
 import { sections } from "../../utils/configs";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../../contexts/ThemeContext";
 
 const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState("#home");
+  const { theme, toggleTheme } = useTheme();
   const headerRef = useRef<HTMLElement>(null);
   const buttonUpRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("aqui");
       if (headerRef.current && buttonUpRef.current) {
-        console.log("aqui2");
         if (window.scrollY > 0) {
           headerRef.current.classList.add("header-shadow");
           buttonUpRef.current.classList.add("show-button-up");
@@ -87,14 +87,14 @@ const Header: React.FC = () => {
             {"<V"} <span style={{ color: "#D46A00" }}>C</span> {" />"}
           </a>
         </div>
-        <div style={{ display: "flex", overflowX: "hidden" }}>
+        <div style={{ display: "flex", overflow: "hidden" }}>
           <div className={"nav-list"}>
             {sections?.map((section, index) => (
               <a
                 key={index}
                 href={section.id}
                 style={{
-                  color: activeSection === section.id ? "#D46A00" : "black",
+                  color: activeSection === section.id ? "#D46A00" : "",
                 }}
                 onClick={(e) => {
                   e.preventDefault();
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
           <a className="header-nav-icons" onClick={() => changeLanguage("en")}>
             <Flag country="US" />
           </a>
-          <a className="header-nav-icons">
+          <a className="header-nav-icons theme-icon" onClick={toggleTheme}>
             <DarkModeIcon />
           </a>
         </div>

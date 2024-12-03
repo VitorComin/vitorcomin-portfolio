@@ -15,13 +15,19 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>("light");
+  const [firstRender, setFirstRender] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setFirstRender(false), 300);
+  }, []);
 
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.id = "theme-stylesheet";
     link.href = `/${theme}-theme.css`;
-    document.head.appendChild(link);
+
+    setTimeout(() => document.head.appendChild(link), 100);
 
     return () => {
       const existingLink = document.getElementById("theme-stylesheet");
@@ -31,12 +37,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   const toggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
+
     setTheme(nextTheme);
   };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
+      {firstRender ? null : children}
     </ThemeContext.Provider>
   );
 };

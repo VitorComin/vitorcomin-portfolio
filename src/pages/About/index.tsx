@@ -40,14 +40,7 @@ const About: React.FC = () => {
                 style={{ width: "100%", height: 2 }}
               />
             </div>
-            <span
-              style={{
-                fontSize: 16,
-                color: "#575757",
-                wordBreak: "break-word",
-                margin: "4% 0",
-              }}
-            >
+            <span className="about-me-text">
               {t("about_me_text")}
               <ul style={{ marginBottom: 0 }}>
                 <li>

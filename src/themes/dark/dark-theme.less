@@ -1,2 +1,63 @@
 @import "./pages.less";
 @import "../../styles/App.less";
+
+body {
+  background-color: #121212;
+}
+
+header {
+  background-color: #121212;
+}
+
+a,
+span,
+label,
+svg,
+h1 {
+  color: #f4f4f4;
+}
+
+input,
+textarea {
+  background-color: #2a2a2a;
+  border: 1px solid rgb(26, 26, 26);
+  color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #464646;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: darkgray;
+  border-radius: 10px;
+}
+
+.header-shadow {
+  box-shadow: 0px 2px 5px rgba(244, 244, 244, 0.3);
+}
+
+.button-up {
+  opacity: 1;
+}
+
+.theme-icon {
+  svg {
+    fill: #d46a00;
+  }
+}
+
+@media (max-width: 999px) {
+  header {
+    box-shadow: 0px -2px 5px rgba(244, 244, 244, 0.3) !important;
+  }
+}
+
+.about-me-text {
+  color: #dcdcdc;
+
+  svg {
+    fill: #f4f4f4;
+  }
+}
