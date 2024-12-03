@@ -1,8 +1,8 @@
 export const sections = [
-  { id: "#home", label: "Início" },
-  { id: "#about", label: "Sobre" },
-  { id: "#projects", label: "Projetos" },
-  { id: "#contact", label: "Contato" },
+  { id: "#home", label: "home" },
+  { id: "#about", label: "about" },
+  { id: "#projects", label: "projects" },
+  { id: "#contact", label: "contact" },
 ];
 
 export const skillBadges = [

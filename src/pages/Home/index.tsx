@@ -1,11 +1,14 @@
 import { GithubIcon, LinkedInIcon, MailIcon } from "../../assets/icons/Icons";
+import { useTranslation } from "react-i18next";
 
 const Home: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="#home" className={"home-section"}>
       <div className="pages-container-columns">
         <span style={{ fontSize: "clamp(1rem, 4vw, 2rem)", margin: "5px 0px" }}>
-          Olá visitante!👋
+          {t("hello")}👋
         </span>
         <span
           style={{
@@ -14,10 +17,10 @@ const Home: React.FC = () => {
             margin: "5px 0px",
           }}
         >
-          Meu nome é Vitor Comin
+          {t("name")}
         </span>
         <span style={{ fontSize: "clamp(1rem, 4vw, 2rem)", margin: "5px 0px" }}>
-          Desenvolvedor Full-Stack
+          {t("developer")}
         </span>
         <div className="home-social-medias-container">
           <div className="brown-line" />

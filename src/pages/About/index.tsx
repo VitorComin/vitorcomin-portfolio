@@ -5,8 +5,10 @@ import {
 } from "../../assets/icons/Icons";
 import MySkills from "../../components/MySkills";
 import PageTitle from "../../components/PageTitle";
+import { useTranslation } from "react-i18next";
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="#about"
@@ -15,7 +17,7 @@ const About: React.FC = () => {
         marginTop: "5%",
       }}
     >
-      <PageTitle title={"Sobre Mim"} />
+      <PageTitle title={t("about_me")} />
       <div
         style={{
           height: "100%",
@@ -32,7 +34,7 @@ const About: React.FC = () => {
             }}
           >
             <div style={{ width: "fit-content", marginBottom: "4%" }}>
-              <span style={{ fontSize: "22px" }}>Um pouco sobre mim:</span>
+              <span style={{ fontSize: "22px" }}>{t("little_about_me")}</span>
               <div
                 className="brown-line"
                 style={{ width: "100%", height: 2 }}
@@ -46,30 +48,30 @@ const About: React.FC = () => {
                 margin: "4% 0",
               }}
             >
-              Vitor, 22 anos, é apaixonado por tecnologia e encontra nela um
-              universo de possibilidades que o inspira a sonhar e crescer. Com
-              dedicação e motivação, busca se desenvolver continuamente,
-              encarando cada desafio como uma oportunidade para avançar ainda
-              mais. Seu amor pelo que faz e o desejo constante de evolução são
-              as forças que impulsionam sua entrega e sua dedicação todos os
-              dias.
+              {t("about_me_text")}
               <ul style={{ marginBottom: 0 }}>
                 <li>
-                  <GraduationIcon /> Bacharel em Sistemas de Informação,
-                  UNIVILLE (8º semestre de 9).{" "}
+                  <GraduationIcon /> {t("education")}
                 </li>
                 <li>
-                  <WorkIcon /> Atua como Desenvolvedor Full-Stack há mais de 1
-                  ano.
+                  <WorkIcon /> {t("work")}{" "}
+                  <a
+                    className="company-link"
+                    href={"https://tiflux.com/"}
+                    target="_blank"
+                  >
+                    Tiflux
+                  </a>
+                  .
                 </li>
                 <li>
-                  <LocationIcon /> Joinville, Santa Catarina. Brasil.
+                  <LocationIcon /> {t("location")}
                 </li>
               </ul>
               <br />
             </span>
             <div style={{ width: "fit-content", margin: "4% 0" }}>
-              <span style={{ fontSize: "22px" }}>Minhas habilidades:</span>
+              <span style={{ fontSize: "22px" }}>{t("my_skills")}</span>
               <div
                 className="brown-line"
                 style={{ width: "100%", height: 2 }}

@@ -2,8 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowUpward, DarkModeIcon } from "../../assets/icons/Icons";
 import Flag from "react-flagkit";
 import { sections } from "../../utils/configs";
+import { useTranslation } from "react-i18next";
 
 const Header: React.FC = () => {
+  const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState("#home");
   const headerRef = useRef<HTMLElement>(null);
   const buttonUpRef = useRef<HTMLButtonElement>(null);
@@ -30,7 +32,9 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  console.log(window.scrollY);
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
 
   const handleScrollTo = (id: string) => {
     const section = document.getElementById(id);
@@ -98,14 +102,14 @@ const Header: React.FC = () => {
                 }}
                 className="header-nav-links"
               >
-                {section.label}
+                {t(section.label)}
               </a>
             ))}
           </div>
-          <a className="header-nav-icons">
+          <a className="header-nav-icons" onClick={() => changeLanguage("pt")}>
             <Flag country="BR" />
           </a>
-          <a className="header-nav-icons">
+          <a className="header-nav-icons" onClick={() => changeLanguage("en")}>
             <Flag country="US" />
           </a>
           <a className="header-nav-icons">

@@ -1,20 +1,22 @@
 import PageTitle from "../../components/PageTitle";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { useTranslation } from "react-i18next";
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   const [state, handleSubmit] = useForm("xjkvpprn");
   const formRef = useRef<HTMLFormElement>(null);
   const MySwal = withReactContent(Swal);
 
   if (state.succeeded) {
     MySwal.fire({
-      title: "Enviado!",
-      text: "Sua mensagem foi enviada ao meu e-mail com sucesso.",
+      title: t("sent"),
+      text: t("message_sent"),
       icon: "success",
-      confirmButtonText: "Fechar",
+      confirmButtonText: t("close"),
     });
     if (formRef.current) {
       formRef.current.reset();
@@ -23,12 +25,12 @@ const Contact: React.FC = () => {
 
   return (
     <section id="#contact" style={{ marginTop: "1%", flexDirection: "column" }}>
-      <PageTitle title={"Contato"} />
+      <PageTitle title={t("contact")} />
       <div
         style={{
           height: "100%",
           display: "flex",
-          marginTop: "10%",
+          marginTop: "7%",
           justifyContent: "center",
         }}
       >
@@ -37,28 +39,22 @@ const Contact: React.FC = () => {
           onSubmit={handleSubmit}
           style={{ display: "flex", flexDirection: "column", width: "50%" }}
         >
-          <label htmlFor="full-name">Nome Completo</label>
+          <label htmlFor="full-name">{t("full_name")}</label>
           <input type="text" name="full-name" id="full-name" />
           <label style={{ marginTop: "5%" }} htmlFor="email">
-            Endereço de E-mail
+            {t("mail_address")}
           </label>
           <input id="email" type="email" name="email" />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
           <label style={{ marginTop: "5%" }} htmlFor="email">
-            Mensagem
+            {t("message")}
           </label>
           <textarea id="message" name="message" />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
           <button
             className="submit-button"
             type="submit"
             disabled={state.submitting}
           >
-            Enviar
+            {t("send")}
           </button>
         </form>
       </div>

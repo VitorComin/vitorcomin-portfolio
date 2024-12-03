@@ -1,6 +1,7 @@
 import React from "react";
 // import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 import Layout from "./components/Layout";
+import "./i18n"; // Importa o arquivo de configuração do i18n
 
 const App: React.FC = () => {
   // const { theme, toggleTheme } = useTheme();
