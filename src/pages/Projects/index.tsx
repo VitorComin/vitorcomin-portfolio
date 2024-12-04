@@ -33,11 +33,45 @@ const Projects: React.FC = () => {
 
           <div
             className={"slide first"}
-            style={{ backgroundColor: "red" }}
-          ></div>
-          <div className={"slide"} style={{ backgroundColor: "brown" }}></div>
-          <div className={"slide"} style={{ backgroundColor: "yellow" }}></div>
-          <div className={"slide"} style={{ backgroundColor: "blue" }}></div>
+            style={{
+              backgroundColor: "red",
+            }}
+          >
+            <div className="project-half-container">
+              <img
+                src="/projeto-portfolio.png"
+                style={{ width: "90%", border: "2px solid black" }}
+              />
+            </div>
+            <div className="project-half-container">daniboy</div>
+          </div>
+          <div
+            className={"slide"}
+            style={{
+              backgroundColor: "brown",
+            }}
+          >
+            <div className="project-half-container">eta</div>
+            <div className="project-half-container">daniboy</div>
+          </div>
+          <div
+            className={"slide"}
+            style={{
+              backgroundColor: "yellow",
+            }}
+          >
+            <div className="project-half-container">eta</div>
+            <div className="project-half-container">daniboy</div>
+          </div>
+          <div
+            className={"slide"}
+            style={{
+              backgroundColor: "blue",
+            }}
+          >
+            <div className="project-half-container">eta</div>
+            <div className="project-half-container">daniboy</div>
+          </div>
 
           <div className="navigation-auto">
             <div className="auto-btn1"></div>
@@ -55,14 +89,6 @@ const Projects: React.FC = () => {
           <label htmlFor="radio4" className="manual-btn"></label>
         </div>
       </div>
-      {/* <div className="projects-container">
-        <div className="pages-container-columns">
-          <img src="projeto-template.png" style={{ width: "70%" }} />
-        </div>
-        <div className="pages-container-columns">
-          <h1>{t("working_on_projects")}</h1>
-        </div>
-      </div> */}
     </section>
   );
 };
