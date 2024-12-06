@@ -27,10 +27,11 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     link.id = "theme-stylesheet";
     link.href = `/${theme}-theme.css`;
 
-    setTimeout(() => document.head.appendChild(link), 100);
+    setTimeout(() => document.head.appendChild(link), 200);
 
     return () => {
       const existingLink = document.getElementById("theme-stylesheet");
+      console.log("aqui?");
       if (existingLink) existingLink.remove();
     };
   }, [theme]);
