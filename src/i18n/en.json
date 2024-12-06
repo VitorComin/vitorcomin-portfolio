@@ -20,5 +20,7 @@
   "sent": "Sent!",
   "message_sent": "Your message has been successfully sent to my e-mail.",
   "close": "Close",
-  "send": "Send"
+  "send": "Send",
+  "preview": "Preview",
+  "repo": "Repository"
 }

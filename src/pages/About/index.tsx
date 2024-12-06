@@ -10,22 +10,9 @@ import { useTranslation } from "react-i18next";
 const About: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section
-      id="#about"
-      style={{
-        flexDirection: "column",
-        marginTop: "5%",
-      }}
-    >
+    <section id="#about" className="about-section">
       <PageTitle title={t("about_me")} />
-      <div
-        style={{
-          height: "100%",
-          width: "100%",
-          flexDirection: "row",
-          display: "flex",
-        }}
-      >
+      <div className="about-container">
         <div className="pages-container-columns" style={{ padding: "0 4%" }}>
           <div
             style={{

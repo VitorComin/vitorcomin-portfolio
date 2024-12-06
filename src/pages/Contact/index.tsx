@@ -24,20 +24,31 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section id="#contact" style={{ marginTop: "1%", flexDirection: "column" }}>
+    <section
+      id="#contact"
+      className={"contact-section"}
+      style={{ marginTop: "1%", flexDirection: "column" }}
+    >
       <PageTitle title={t("contact")} />
       <div
+        className="contact-container"
         style={{
           height: "100%",
           display: "flex",
           marginTop: "7%",
           justifyContent: "center",
+          margin: " auto 0",
         }}
       >
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          style={{ display: "flex", flexDirection: "column", width: "50%" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "50%",
+            margin: "auto 0",
+          }}
         >
           <label htmlFor="full-name">{t("full_name")}</label>
           <input type="text" name="full-name" id="full-name" />

@@ -49,7 +49,7 @@ const Home: React.FC = () => {
       </div>
       <div className="pages-container-columns page-image">
         <img
-          src="/foto-vitor-portfolio-v2.png"
+          src="/foto-vitor-portfolio.png"
           alt="Template"
           style={{ height: "70%" }}
         />
