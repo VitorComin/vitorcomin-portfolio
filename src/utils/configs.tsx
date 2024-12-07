@@ -47,3 +47,45 @@ export const skillBadges = [
     alt: "Vitest",
   },
 ];
+
+const loremIpsum =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar aliquam elit at tincidunt. In sit amet imperdiet diam. Donec ornare ligula sed mauris dictum, quis tincidunt diam accumsan. Nulla quis porttitor sapien. Aliquam commodo erat ante, in ullamcorper sem consequat sit amet. Donec scelerisque sapien et eros laoreet, a vestibulum eros feugiat.";
+
+export const projects = [
+  {
+    imageSrc: "/projeto-portfolio.png",
+    imageAlt: "project_template",
+    title: "working_on_projects",
+    description: loremIpsum,
+    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
+    firstProject: true,
+    previewLink: "https://www.vitorcomin.com.br",
+  },
+  {
+    imageSrc: "/projeto-portfolio.png",
+    imageAlt: "project_template",
+    title: "working_on_projects",
+    description: loremIpsum,
+    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
+    firstProject: false,
+    previewLink: "https://www.vitorcomin.com.br",
+  },
+  {
+    imageSrc: "/projeto-portfolio.png",
+    imageAlt: "project_template",
+    title: "working_on_projects",
+    description: loremIpsum,
+    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
+    firstProject: false,
+    previewLink: "https://www.vitorcomin.com.br",
+  },
+  {
+    imageSrc: "/projeto-portfolio.png",
+    imageAlt: "project_template",
+    title: "working_on_projects",
+    description: loremIpsum,
+    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
+    firstProject: false,
+    previewLink: "https://www.vitorcomin.com.br",
+  },
+];

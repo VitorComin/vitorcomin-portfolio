@@ -1,8 +1,4 @@
-import {
-  GraduationIcon,
-  LocationIcon,
-  WorkIcon,
-} from "../../assets/icons/Icons";
+import AboutMeLittleList from "../../components/AboutMeLittleList";
 import MySkills from "../../components/MySkills";
 import PageTitle from "../../components/PageTitle";
 import { useTranslation } from "react-i18next";
@@ -14,12 +10,7 @@ const About: React.FC = () => {
       <PageTitle title={t("about_me")} />
       <div className="about-container">
         <div className="pages-container-columns" style={{ padding: "0 4%" }}>
-          <div
-            style={{
-              width: "100%",
-              height: "fit-content",
-            }}
-          >
+          <div style={{ width: "100%", height: "fit-content" }}>
             <div style={{ width: "fit-content", marginBottom: "4%" }}>
               <span style={{ fontSize: "22px" }}>{t("little_about_me")}</span>
               <div
@@ -29,25 +20,7 @@ const About: React.FC = () => {
             </div>
             <span className="about-me-text">
               {t("about_me_text")}
-              <ul style={{ marginBottom: 0 }}>
-                <li>
-                  <GraduationIcon /> {t("education")}
-                </li>
-                <li>
-                  <WorkIcon /> {t("work")}{" "}
-                  <a
-                    className="company-link"
-                    href={"https://tiflux.com/"}
-                    target="_blank"
-                  >
-                    Tiflux
-                  </a>
-                  .
-                </li>
-                <li>
-                  <LocationIcon /> {t("location")}
-                </li>
-              </ul>
+              <AboutMeLittleList />
               <br />
             </span>
             <div style={{ width: "fit-content", margin: "4% 0" }}>

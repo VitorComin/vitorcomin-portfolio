@@ -1,5 +1,5 @@
 import PageTitle from "../../components/PageTitle";
-import { useForm } from "@formspree/react";
+import { useForm, ValidationError } from "@formspree/react";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -24,42 +24,29 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section
-      id="#contact"
-      className={"contact-section"}
-      style={{ marginTop: "1%", flexDirection: "column" }}
-    >
+    <section id="#contact" className={"contact-section"}>
       <PageTitle title={t("contact")} />
-      <div
-        className="contact-container"
-        style={{
-          height: "100%",
-          display: "flex",
-          marginTop: "7%",
-          justifyContent: "center",
-          margin: " auto 0",
-        }}
-      >
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            width: "50%",
-            margin: "auto 0",
-          }}
-        >
+      <div className="contact-container">
+        <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
           <label htmlFor="full-name">{t("full_name")}</label>
           <input type="text" name="full-name" id="full-name" />
+
           <label style={{ marginTop: "5%" }} htmlFor="email">
             {t("mail_address")}
           </label>
           <input id="email" type="email" name="email" />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+
           <label style={{ marginTop: "5%" }} htmlFor="email">
             {t("message")}
           </label>
           <textarea id="message" name="message" />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+
           <button
             className="submit-button"
             type="submit"
