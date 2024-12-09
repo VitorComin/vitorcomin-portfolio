@@ -1,22 +1,29 @@
 import PageTitle from "../../components/PageTitle";
 import { useForm, ValidationError } from "@formspree/react";
-import { useRef } from "react";
+import { FormEvent, useRef } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../../contexts/ThemeContext";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
   const [state, handleSubmit] = useForm("xjkvpprn");
   const formRef = useRef<HTMLFormElement>(null);
   const MySwal = withReactContent(Swal);
+  const { theme } = useTheme();
 
-  if (state.succeeded) {
+  async function submitForm(value: FormEvent<HTMLFormElement>) {
+    await handleSubmit(value);
+
     MySwal.fire({
       title: t("sent"),
       text: t("message_sent"),
       icon: "success",
       confirmButtonText: t("close"),
+      confirmButtonColor: "#d46a00",
+      background: theme === "light" ? "rgb(244, 244, 244)" : "#050505",
+      color: theme === "light" ? "#545454" : "#f4f4f4",
     });
     if (formRef.current) {
       formRef.current.reset();
@@ -27,7 +34,11 @@ const Contact: React.FC = () => {
     <section id="#contact" className={"contact-section"}>
       <PageTitle title={t("contact")} />
       <div className="contact-container">
-        <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
+        <form
+          ref={formRef}
+          onSubmit={(value) => submitForm(value)}
+          className="contact-form"
+        >
           <label htmlFor="full-name">{t("full_name")}</label>
           <input type="text" name="full-name" id="full-name" />
 
