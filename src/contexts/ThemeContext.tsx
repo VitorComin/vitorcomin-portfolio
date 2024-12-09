@@ -27,7 +27,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     link.id = "theme-stylesheet";
     link.href = `/${theme}-theme.css`;
 
-    setTimeout(() => document.head.appendChild(link), 100);
+    setTimeout(() => document.head.appendChild(link), 0);
 
     return () => {
       const existingLink = document.getElementById("theme-stylesheet");
