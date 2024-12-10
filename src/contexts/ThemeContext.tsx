@@ -16,8 +16,9 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>("light");
   const [firstRender, setFirstRender] = useState(true);
-
+  console.log(firstRender);
   useEffect(() => {
+    console.log("eita");
     setTimeout(() => setFirstRender(false), 300);
   }, []);
 
@@ -26,12 +27,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     link.rel = "stylesheet";
     link.id = "theme-stylesheet";
     link.href = `/${theme}-theme.css`;
-
+    setTimeout(() => console.log("passou aqui"), 0);
     setTimeout(() => document.head.appendChild(link), 0);
 
     return () => {
       const existingLink = document.getElementById("theme-stylesheet");
-      if (existingLink) setTimeout(() => existingLink.remove(), 120);
+      setTimeout(() => console.log("passou aqui 2", 180));
+      if (existingLink) setTimeout(() => existingLink.remove(), 180);
     };
   }, [theme]);
 
