@@ -35,7 +35,7 @@ const About: React.FC = () => {
         </div>
         <div className="pages-container-columns page-image">
           <img
-            src="/segunda-foto-vitor-portfolio.png"
+            src="https://res.cloudinary.com/drenq2n4a/image/upload/v1733845711/zavlxdpz5zpfemafdlsx.png"
             alt="Template"
             style={{ height: "70%" }}
           />

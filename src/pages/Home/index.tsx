@@ -12,9 +12,9 @@ const Home: React.FC = () => {
         <span className="home-page-texts">{t("developer")}</span>
         <HomeSocialMediaButtons />
       </div>
-      <div className="pages-container-columns page-image">
+      <div className="pages-container-columns home-page-image">
         <img
-          src="/foto-vitor-portfolio.png"
+          src="https://res.cloudinary.com/drenq2n4a/image/upload/v1733845706/wozat2hjz7lprwbijj31.png"
           alt="Template"
           style={{ height: "70%" }}
         />
