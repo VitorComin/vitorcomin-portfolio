@@ -39,8 +39,8 @@ const Projects: React.FC = () => {
               />
             ))}
 
-            {projects.map((project) => (
-              <ProjectSlide project={project} />
+            {projects.map((project, index) => (
+              <ProjectSlide key={index} project={project} />
             ))}
           </div>
 
