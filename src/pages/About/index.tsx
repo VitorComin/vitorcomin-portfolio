@@ -37,7 +37,7 @@ const About: React.FC = () => {
           <img
             src="https://res.cloudinary.com/drenq2n4a/image/upload/v1733845711/zavlxdpz5zpfemafdlsx.png"
             alt="Template"
-            style={{ height: "70%" }}
+            style={{ height: "65%" }}
           />
         </div>
       </div>

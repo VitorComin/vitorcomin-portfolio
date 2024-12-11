@@ -21,7 +21,7 @@ const ProjectSlide: React.FC<IProjectSlide> = ({ project }) => {
             onClick={() => window.open(project.githubLink, "_blank")}
           >
             <GithubIcon />
-            {t("repo")}
+            {t("code")}
           </button>
           <button
             className="project-buttons"

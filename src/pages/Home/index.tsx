@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <img
           src="https://res.cloudinary.com/drenq2n4a/image/upload/v1733845706/wozat2hjz7lprwbijj31.png"
           alt="Template"
-          style={{ height: "70%" }}
+          style={{ height: "65%" }}
         />
       </div>
     </section>
