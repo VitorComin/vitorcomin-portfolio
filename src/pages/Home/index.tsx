@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       <div className="pages-container-columns home-page-image">
         <img
           src="https://res.cloudinary.com/drenq2n4a/image/upload/v1733845706/wozat2hjz7lprwbijj31.png"
-          alt="Template"
+          alt={t("portfolio_image")}
           style={{ height: "65%" }}
         />
       </div>
