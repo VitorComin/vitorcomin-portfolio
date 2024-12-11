@@ -120,6 +120,14 @@ svg:hover {
 @media (max-width: 999px) {
   *,
   html {
-    scroll-padding-top: 2vh;
+    scroll-snap-type: unset;
+    scroll-padding-top: unset;
+  }
+
+  section {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    scroll-snap-align: unset;
   }
 }

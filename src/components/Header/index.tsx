@@ -42,12 +42,9 @@ const Header: React.FC = () => {
       const sectionTop = section.offsetTop;
       const offset = window.innerWidth <= 999 ? 0 : 8;
 
-      setTimeout(() => {
-        window.scrollTo({
-          top: sectionTop - (window.innerHeight * offset) / 100,
-          behavior: "smooth",
-        });
-      }, 100);
+      window.scrollTo({
+        top: sectionTop - (window.innerHeight * offset) / 100,
+      });
     }
   };
 
