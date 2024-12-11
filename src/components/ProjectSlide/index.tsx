@@ -6,7 +6,11 @@ const ProjectSlide: React.FC<IProjectSlide> = ({ project }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={`slide ${project.firstProject ? "first" : ""}`}>
+    <div
+      className={`slide ${
+        project.firstProject ? "first" : project.lastProject ? "last" : ""
+      }`}
+    >
       <div className="project-half-container">
         <img src={project.imageSrc} alt={t(project.imageAlt)} />
       </div>
