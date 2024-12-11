@@ -7,6 +7,8 @@
 *,
 html {
   scroll-behavior: smooth !important;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 8vh;
 }
 
 body {
@@ -18,6 +20,7 @@ section {
   width: 100%;
   height: 92vh;
   display: flex;
+  scroll-snap-align: start;
 }
 
 input {
