@@ -8,7 +8,7 @@ import { useTheme } from "../../contexts/ThemeContext";
 const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState("#home");
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
   const headerRef = useRef<HTMLElement>(null);
   const buttonUpRef = useRef<HTMLButtonElement>(null);
 
@@ -42,9 +42,12 @@ const Header: React.FC = () => {
       const sectionTop = section.offsetTop;
       const offset = window.innerWidth <= 999 ? 0 : 8;
 
-      window.scrollTo({
-        top: sectionTop - (window.innerHeight * offset) / 100,
-      });
+      setTimeout(() => {
+        window.scrollTo({
+          top: sectionTop - (window.innerHeight * offset) / 100,
+          behavior: "smooth",
+        });
+      }, 100);
     }
   };
 
