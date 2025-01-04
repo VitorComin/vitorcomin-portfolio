@@ -33,15 +33,25 @@
   margin: 5px 0px;
 }
 
+.home-section {
+  height: 92vh !important;
+}
+
 @media (max-width: 1115px) {
   .home-section {
     justify-content: center;
     flex-direction: column-reverse !important;
+
+    .pages-container-columns {
+      height: 50%;
+    }
   }
 
   .home-page-image img {
-    margin-bottom: 5%;
-    height: unset;
-    width: 40%;
+    height: unset !important;
+    max-width: 70vw;
+    max-height: 40vh;
+    position: relative;
+    top: 5vh;
   }
 }
