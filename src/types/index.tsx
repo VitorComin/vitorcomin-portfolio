@@ -8,8 +8,6 @@ export interface IProject {
   title: string;
   description: string;
   githubLink: string;
-  firstProject: boolean;
-  lastProject: boolean;
   previewLink?: string;
 }
 

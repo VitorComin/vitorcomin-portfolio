@@ -58,8 +58,6 @@ export const projects = [
     title: "working_on_projects",
     description: loremIpsum,
     githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    firstProject: true,
-    lastProject: false,
     previewLink: "https://www.vitorcomin.com.br",
   },
   {
@@ -68,8 +66,6 @@ export const projects = [
     title: "working_on_projects",
     description: loremIpsum,
     githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    firstProject: false,
-    lastProject: false,
     previewLink: "https://www.vitorcomin.com.br",
   },
   {
@@ -78,8 +74,6 @@ export const projects = [
     title: "working_on_projects",
     description: loremIpsum,
     githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    firstProject: false,
-    lastProject: false,
     previewLink: "https://www.vitorcomin.com.br",
   },
   {
@@ -88,8 +82,6 @@ export const projects = [
     title: "working_on_projects",
     description: loremIpsum,
     githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    firstProject: false,
-    lastProject: true,
     previewLink: "https://www.vitorcomin.com.br",
   },
 ];
