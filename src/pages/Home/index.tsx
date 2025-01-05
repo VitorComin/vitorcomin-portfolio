@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 
   return (
     <section id="#home" className={"home-section"}>
-      <div className="pages-container-columns home-page-texts-container">
+      <div className="pages-container-columns">
         <span className="home-page-texts">{t("hello")}👋</span>
         <span className="my-name-is">{t("name")}</span>
         <span className="home-page-texts">{t("developer")}</span>

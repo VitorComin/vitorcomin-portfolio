@@ -43,33 +43,23 @@
     flex-direction: column-reverse !important;
 
     .pages-container-columns {
-      height: 50%;
+      height: fit-content;
     }
+  }
+
+  .home-page-image {
+    padding-bottom: 5%;
   }
 
   .home-page-image img {
     height: unset !important;
     max-width: 70vw;
     max-height: 40vh;
-    position: relative;
-    top: 5vh;
   }
 }
 
 @media (max-height: 450px) {
   .home-page-image {
     display: none !important;
-  }
-
-  .home-page-texts-container {
-    padding-bottom: 0% !important;
-    height: 50% !important;
-  }
-}
-
-@media (max-width: 700px) {
-  .home-page-texts-container {
-    padding-bottom: 10%;
-    height: 40%;
   }
 }
