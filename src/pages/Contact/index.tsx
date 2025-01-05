@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
           onSubmit={(value) => submitForm(value)}
           className="contact-form"
         >
-          <label htmlFor="full-name">{t("full_name")}</label>
+          <label htmlFor="full-name">{t("name")}</label>
           <input type="text" name="full-name" id="full-name" />
 
           <label style={{ marginTop: "5%" }} htmlFor="email">

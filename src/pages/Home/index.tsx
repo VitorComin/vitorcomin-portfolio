@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <section id="#home" className={"home-section"}>
       <div className="pages-container-columns">
         <span className="home-page-texts">{t("hello")}👋</span>
-        <span className="my-name-is">{t("name")}</span>
+        <span className="my-name-is">{t("my_name")}</span>
         <span className="home-page-texts">{t("developer")}</span>
         <HomeSocialMediaButtons />
       </div>
