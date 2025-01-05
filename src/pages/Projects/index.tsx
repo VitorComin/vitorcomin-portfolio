@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
         pagination
         mousewheel
         keyboard
-        speed={2000}
+        speed={1000}
         loop
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="projects-swiper"
