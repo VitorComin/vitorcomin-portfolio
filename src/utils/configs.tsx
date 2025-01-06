@@ -49,7 +49,7 @@ export const skillBadges = [
 ];
 
 const loremIpsum =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar aliquam elit at tincidunt. In sit amet imperdiet diam. Donec ornare ligula sed mauris dictum, quis tincidunt diam accumsan. Nulla quis porttitor sapien. Aliquam commodo erat ante, in ullamcorper sem consequat sit amet. Donec scelerisque sapien et eros laoreet, a vestibulum eros feugiat.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar aliquam elit at tincidunt. In sit amet imperdiet diam. Donec ornare ligula sed mauris.";
 
 export const projects = [
   {

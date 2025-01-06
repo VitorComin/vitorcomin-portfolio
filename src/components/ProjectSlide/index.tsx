@@ -8,7 +8,11 @@ const ProjectSlide: React.FC<IProjectSlide> = ({ project }) => {
   return (
     <div className={"slide"}>
       <div className="project-half-container project-image">
-        <img src={project.imageSrc} alt={t(project.imageAlt)} />
+        <img
+          src={project.imageSrc}
+          alt={t(project.imageAlt)}
+          style={{ maxWidth: "90%", maxHeight: "90%" }}
+        />
       </div>
       <div className="project-half-container project-description">
         <strong>{t(project.title)}</strong>
