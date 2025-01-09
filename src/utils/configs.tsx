@@ -85,3 +85,9 @@ export const projects = [
     previewLink: "https://www.vitorcomin.com.br",
   },
 ];
+
+export const aboutPageImage =
+  "https://res.cloudinary.com/drenq2n4a/image/upload/v1733845711/zavlxdpz5zpfemafdlsx.png";
+
+export const homePageImage =
+  "https://res.cloudinary.com/drenq2n4a/image/upload/v1733845706/wozat2hjz7lprwbijj31.png";

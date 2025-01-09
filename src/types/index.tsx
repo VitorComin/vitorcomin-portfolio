@@ -14,3 +14,7 @@ export interface IProject {
 export interface IProjectSlide {
   project: IProject;
 }
+
+export interface IPageContentTitles {
+  title: string;
+}
