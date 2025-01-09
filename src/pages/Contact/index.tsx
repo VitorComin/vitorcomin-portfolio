@@ -31,9 +31,9 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section id="#contact" className={"contact-section"}>
+    <section id="#contact" className={"pages-sections"}>
       <PageTitle title={t("contact")} />
-      <div className="contact-container">
+      <div className="pages-container">
         <form
           ref={formRef}
           onSubmit={(value) => submitForm(value)}

@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 
   return (
     <section id="#home" className={"home-section"}>
-      <div className="pages-container-columns">
+      <div className="pages-container-columns home-page-texts-container">
         <span className="home-page-texts">{t("hello")}👋</span>
         <span className="my-name-is">{t("my_name")}</span>
         <span className="home-page-texts">{t("developer")}</span>
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <img
           src="https://res.cloudinary.com/drenq2n4a/image/upload/v1733845706/wozat2hjz7lprwbijj31.png"
           alt={t("portfolio_image")}
-          style={{ height: "65%" }}
+          style={{ maxHeight: "65%", maxWidth: "65%" }}
         />
       </div>
     </section>

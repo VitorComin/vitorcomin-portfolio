@@ -14,12 +14,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-section {
-  width: 100%;
-  height: 92vh;
-  display: flex;
-}
-
 input {
   border-radius: 5px;
   height: 30px;
@@ -56,6 +50,30 @@ svg:hover {
   opacity: 0.7 !important;
 }
 
+.pages-sections,
+.home-section {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+}
+
+.pages-sections:not(:last-child),
+.home-section {
+  margin-bottom: 5%;
+}
+
+.pages-sections {
+  flex-direction: column;
+}
+
+.pages-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -81,12 +99,11 @@ svg:hover {
 }
 
 .page-title-container {
-  height: 10%;
+  min-height: 10%;
   width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-top: 2%;
 }
 
 .my-skills-container {
@@ -104,25 +121,27 @@ svg:hover {
     width: 100%;
   }
 
-  section {
-    min-height: 92vh;
-    height: unset;
-    flex-direction: column;
-  }
-
   .page-image {
     display: none;
   }
 }
 
-@media (max-width: 999px) {
-  *,
-  html {
-    scroll-snap-type: unset;
-    scroll-padding-top: unset;
+@media (max-width: 800px), (max-height: 600px) {
+  .pages-sections {
+    height: fit-content;
+    gap: unset;
   }
 
-  section {
-    scroll-snap-align: unset;
+  .pages-sections:not(:last-child),
+  .home-section {
+    margin-bottom: 10%;
+  }
+
+  .page-title-container {
+    margin-bottom: 50px;
+  }
+
+  .pages-container {
+    height: fit-content;
   }
 }

@@ -12,28 +12,27 @@ const Projects: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section
-      id="#projects"
-      style={{ marginTop: "1%", flexDirection: "column" }}
-    >
+    <section id="#projects" className={"pages-sections"}>
       <PageTitle title={t("projects")} />
-      <Swiper
-        cssMode={false}
-        navigation
-        pagination
-        mousewheel
-        keyboard
-        speed={1000}
-        loop
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="projects-swiper"
-      >
-        {projects.map((project, index) => (
-          <SwiperSlide key={index}>
-            <ProjectSlide project={project} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className={"pages-container"}>
+        <Swiper
+          cssMode={false}
+          navigation
+          pagination
+          mousewheel
+          keyboard
+          speed={1000}
+          loop
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          className="projects-swiper"
+        >
+          {projects.map((project, index) => (
+            <SwiperSlide key={index}>
+              <ProjectSlide project={project} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };

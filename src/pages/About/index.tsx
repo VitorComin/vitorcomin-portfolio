@@ -6,9 +6,9 @@ import { useTranslation } from "react-i18next";
 const About: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section id="#about" className="about-section">
+    <section id="#about" className="pages-sections">
       <PageTitle title={t("about_me")} />
-      <div className="about-container">
+      <div className="pages-container">
         <div className="pages-container-columns" style={{ padding: "0 4%" }}>
           <div style={{ width: "100%", height: "fit-content" }}>
             <div style={{ width: "fit-content", marginBottom: "4%" }}>
@@ -37,7 +37,7 @@ const About: React.FC = () => {
           <img
             src="https://res.cloudinary.com/drenq2n4a/image/upload/v1733845711/zavlxdpz5zpfemafdlsx.png"
             alt={t("portfolio_image")}
-            style={{ height: "65%" }}
+            style={{ maxHeight: "65%", maxWidth: "65%" }}
           />
         </div>
       </div>
