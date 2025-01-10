@@ -48,15 +48,21 @@ export const skillBadges = [
   },
 ];
 
-const loremIpsum =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar aliquam elit at tincidunt. In sit amet imperdiet diam. Donec ornare ligula sed mauris.";
-
 export const projects = [
   {
+    imageSrc:
+      "https://res.cloudinary.com/drenq2n4a/image/upload/v1736469369/z0eqpd0na6d1a41hvjkh.png",
+    imageAlt: "weather_radar_project",
+    title: "weather_radar_title",
+    description: "weather_radar_description",
+    githubLink: "https://github.com/VitorComin/weather-radar",
+    previewLink: "https://vitorcomin.github.io/weather-radar/#/",
+  },
+  {
     imageSrc: "/projeto-portfolio.png",
     imageAlt: "project_template",
     title: "working_on_projects",
-    description: loremIpsum,
+    description: "working_on_projects",
     githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
     previewLink: "https://www.vitorcomin.com.br",
   },
@@ -64,7 +70,7 @@ export const projects = [
     imageSrc: "/projeto-portfolio.png",
     imageAlt: "project_template",
     title: "working_on_projects",
-    description: loremIpsum,
+    description: "working_on_projects",
     githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
     previewLink: "https://www.vitorcomin.com.br",
   },
@@ -72,15 +78,7 @@ export const projects = [
     imageSrc: "/projeto-portfolio.png",
     imageAlt: "project_template",
     title: "working_on_projects",
-    description: loremIpsum,
-    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    previewLink: "https://www.vitorcomin.com.br",
-  },
-  {
-    imageSrc: "/projeto-portfolio.png",
-    imageAlt: "project_template",
-    title: "working_on_projects",
-    description: loremIpsum,
+    description: "working_on_projects",
     githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
     previewLink: "https://www.vitorcomin.com.br",
   },

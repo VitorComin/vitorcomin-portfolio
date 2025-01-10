@@ -30,7 +30,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
     return () => {
       const existingLink = document.getElementById("theme-stylesheet");
-      if (existingLink) setTimeout(() => existingLink.remove(), 200);
+      if (existingLink) setTimeout(() => existingLink.remove(), 500);
     };
   }, [theme]);
 
