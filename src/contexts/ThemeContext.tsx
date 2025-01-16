@@ -22,16 +22,17 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.id = "theme-stylesheet";
-    link.href = `/${theme}-theme.css`;
-    setTimeout(() => document.head.appendChild(link), 150);
+    const darkStyleSheet = document.getElementById(
+      "dark-theme-stylesheet"
+    ) as HTMLLinkElement;
 
-    return () => {
-      const existingLink = document.getElementById("theme-stylesheet");
-      if (existingLink) setTimeout(() => existingLink.remove(), 200);
-    };
+    if (darkStyleSheet) {
+      if (theme === "dark") {
+        darkStyleSheet.disabled = false;
+      } else {
+        darkStyleSheet.disabled = true;
+      }
+    }
   }, [theme]);
 
   const toggleTheme = () => {
