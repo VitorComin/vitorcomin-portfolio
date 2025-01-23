@@ -13,6 +13,8 @@ const Header: React.FC = () => {
   const buttonUpRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    turnSectionVisible("home-section");
+
     function handleEffectsOnScrollingPage() {
       handleGoTopButtonAndHeaderShadow();
       detectVisibleSection();
@@ -23,7 +25,20 @@ const Header: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleEffectsOnScrollingPage);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function turnSectionVisible(section: string) {
+    const sectionElement = document.querySelector(
+      `section.${section}`
+    ) as HTMLElement;
+    const elementExistsAndIsHide =
+      sectionElement && !sectionElement?.style?.opacity;
+
+    if (elementExistsAndIsHide) {
+      sectionElement.style.opacity = "1";
+    }
+  }
 
   function handleGoTopButtonAndHeaderShadow() {
     const headerAndButtonUpExists = headerRef.current && buttonUpRef.current;
@@ -48,6 +63,7 @@ const Header: React.FC = () => {
         const rect = sectionElement.getBoundingClientRect();
         if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
           setActiveSection(section.id);
+          turnSectionVisible(section.label);
         }
       }
     });

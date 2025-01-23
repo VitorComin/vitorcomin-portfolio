@@ -1,3 +1,8 @@
+.about {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
 .company-link {
   color: #d46a00;
   font-weight: 500;
@@ -47,5 +52,11 @@
 @media (max-width: 800px), (max-height: 600px) {
   .about-page-image {
     height: auto !important;
+  }
+}
+
+@media (max-height: 550px) {
+  .about-page-image img {
+    max-width: 250px;
   }
 }

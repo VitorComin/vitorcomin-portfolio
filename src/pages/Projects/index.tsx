@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="#projects" className={"pages-sections"}>
+    <section id="#projects" className={"pages-sections projects"}>
       <PageTitle title={t("projects")} />
       <div className={"pages-container"}>
         <Swiper

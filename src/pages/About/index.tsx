@@ -8,7 +8,7 @@ import { aboutPageImage } from "../../utils/configs";
 const About: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section id="#about" className="pages-sections">
+    <section id="#about" className="pages-sections about">
       <PageTitle title={t("about_me")} />
       <div className="pages-container">
         <div className="pages-container-columns" style={{ padding: "0 4%" }}>
