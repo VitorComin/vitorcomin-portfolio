@@ -34,8 +34,7 @@
 }
 
 .home-page-image img {
-  max-height: 65%;
-  max-width: 65%;
+  max-width: 500px;
 }
 
 @media (max-width: 1115px) {
@@ -72,5 +71,11 @@
 @media (max-height: 500px) and (max-width: 1115px) {
   .home-page-image {
     display: none !important;
+  }
+}
+
+@media (max-height: 550px) and (min-width: 1115px) {
+  .home-page-image img {
+    max-width: 250px;
   }
 }
