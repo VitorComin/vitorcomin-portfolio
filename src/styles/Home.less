@@ -31,6 +31,13 @@
   font-size: clamp(1rem, 7vw, 3rem);
   color: #d46a00;
   margin: 5px 0px;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap;
+  width: 0;
+  max-width: fit-content;
+  animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
 
 .home-page-texts {
@@ -82,5 +89,22 @@
 @media (max-height: 550px) and (min-width: 1115px) {
   .home-page-image img {
     max-width: 250px;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    padding-right: 0;
+  }
+  to {
+    width: 100%;
+    padding-right: 5px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
