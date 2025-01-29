@@ -73,8 +73,8 @@ const Header: React.FC = () => {
     i18n.changeLanguage(lang);
   }
 
-  function handleScrollToSelectedSection(id: string) {
-    const section = document.getElementById(id);
+  function handleScrollToSelectedSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
 
     if (section) {
       const sectionTop = section.offsetTop;
@@ -102,7 +102,7 @@ const Header: React.FC = () => {
             className="header-nav-logo"
             onClick={(e) => {
               e.preventDefault();
-              handleScrollToSelectedSection("#home");
+              scrollToTheTopOfThePage();
             }}
           >
             {"<V"} <span style={{ color: "#D46A00" }}>C</span> {" />"}
@@ -113,17 +113,19 @@ const Header: React.FC = () => {
             {sections?.map((section, index) => (
               <a
                 key={index}
-                href={section.id}
+                href={section?.id}
                 style={{
-                  color: activeSection === section.id ? "#D46A00" : "",
+                  color: activeSection === section?.id ? "#D46A00" : "",
                 }}
                 onClick={(e) => {
                   e.preventDefault();
-                  handleScrollToSelectedSection(section.id);
+                  section?.id === "#home"
+                    ? scrollToTheTopOfThePage()
+                    : handleScrollToSelectedSection(section?.id);
                 }}
                 className="header-nav-links"
               >
-                {t(section.label)}
+                {t(section?.label)}
               </a>
             ))}
           </div>
