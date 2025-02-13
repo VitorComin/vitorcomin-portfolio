@@ -50,6 +50,13 @@ export const skillBadges = [
 
 export const projects = [
   {
+    imageSrc: "https://res.cloudinary.com/drenq2n4a/image/upload/v1739404087/tbqlpexki9fuvcxnkkbu.png",
+    imageAlt: "cimefer_group_site",
+    title: "cimefer_group_site",
+    description: "cimefer_group_description",
+    previewLink: "https://www.cimefergroup.com.br",
+  },
+  {
     imageSrc:
       "https://res.cloudinary.com/drenq2n4a/image/upload/v1736469369/z0eqpd0na6d1a41hvjkh.png",
     imageAlt: "weather_radar_project",
@@ -57,31 +64,7 @@ export const projects = [
     description: "weather_radar_description",
     githubLink: "https://github.com/VitorComin/weather-radar",
     previewLink: "https://vitorcomin.github.io/weather-radar/#/",
-  },
-  {
-    imageSrc: "/projeto-portfolio.png",
-    imageAlt: "project_template",
-    title: "working_on_projects",
-    description: "working_on_projects",
-    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    previewLink: "https://www.vitorcomin.com.br",
-  },
-  {
-    imageSrc: "/projeto-portfolio.png",
-    imageAlt: "project_template",
-    title: "working_on_projects",
-    description: "working_on_projects",
-    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    previewLink: "https://www.vitorcomin.com.br",
-  },
-  {
-    imageSrc: "/projeto-portfolio.png",
-    imageAlt: "project_template",
-    title: "working_on_projects",
-    description: "working_on_projects",
-    githubLink: "https://github.com/VitorComin/vitorcomin-portfolio",
-    previewLink: "https://www.vitorcomin.com.br",
-  },
+  }
 ];
 
 export const aboutPageImage =

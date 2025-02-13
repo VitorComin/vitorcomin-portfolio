@@ -26,5 +26,7 @@
   "portfolio_image": "Portfólio de Vitor Comin",
   "weather_radar_title": "Weather Radar",
   "weather_radar_project": "Projeto Weather Radar",
-  "weather_radar_description": "Projeto pessoal básico de Front-End consumindo API pública OpenWeatherAPI, com responsividade, transições CSS, testes automatizados, arquitetura de código e mais."
+  "weather_radar_description": "Projeto pessoal básico de Front-End consumindo API pública OpenWeatherAPI, com responsividade, transições CSS, testes automatizados, arquitetura de código e mais.",
+  "cimefer_group_site": "Site Empresarial Cimefer Group",
+  "cimefer_group_description": "Landing page profissional e responsiva para a Cimefer Group, desenvolvida em WordPress."
 }

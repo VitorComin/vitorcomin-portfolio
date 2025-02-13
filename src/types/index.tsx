@@ -7,7 +7,7 @@ export interface IProject {
   imageAlt: string;
   title: string;
   description: string;
-  githubLink: string;
+  githubLink?: string;
   previewLink?: string;
 }
 

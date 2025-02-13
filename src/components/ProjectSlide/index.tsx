@@ -6,41 +6,40 @@ const ProjectSlide: React.FC<IProjectSlide> = ({ project }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={"slide"}>
-      <div className="project-half-container project-image">
+    <div className={"page-item"}>
         <img
-          src={project.imageSrc}
-          alt={t(project.imageAlt)}
-          style={{ maxWidth: "90%", maxHeight: "90%" }}
+          src={project?.imageSrc}
+          alt={t(project?.imageAlt)}
         />
-      </div>
-      <div className="project-half-container project-description">
-        <strong>{t(project.title)}</strong>
-        <br />
-        <span>{t(project.description)}</span>
-        <br />
-        <div className="project-buttons-container">
-          <button
-            className="project-buttons"
-            onClick={() => window.open(project.githubLink, "_blank")}
-          >
-            <GithubIcon />
-            {t("code")}
-          </button>
-          <button
-            className="project-buttons"
-            disabled={!project?.previewLink}
-            onClick={() =>
-              project?.previewLink &&
-              window.open(project?.previewLink, "_blank")
+        <div className="project-description">
+
+          <strong>{t(project?.title)}</strong>
+
+          <span>{t(project?.description)}</span>
+
+          <div className="project-buttons-container">
+            {project?.githubLink && 
+              <button
+                className="project-buttons"
+                onClick={() => window.open(project.githubLink, "_blank")}
+              >
+                <GithubIcon />
+                {t("code")}
+              </button>
             }
-          >
-            <PreviewIcon />
-            {t("preview")}
-          </button>
+            {project?.previewLink && 
+              <button
+                className="project-buttons"
+                onClick={() => window.open(project.previewLink, "_blank")}
+              >
+                <PreviewIcon />
+                {t("preview")}
+              </button>
+            }
+          </div>
+
         </div>
       </div>
-    </div>
   );
 };
 
