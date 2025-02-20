@@ -13,19 +13,23 @@ const ContactForm: React.FC = () => {
   const { theme } = useTheme();
 
   async function submitForm(value: FormEvent<HTMLFormElement>) {
-    await handleSubmit(value);
+    try {
+      await handleSubmit(value);
 
-    MySwal.fire({
-      title: t("sent"),
-      text: t("message_sent"),
-      icon: "success",
-      confirmButtonText: t("close"),
-      confirmButtonColor: "#d46a00",
-      background: theme === "light" ? "rgb(244, 244, 244)" : "#050505",
-      color: theme === "light" ? "#545454" : "#f4f4f4",
-    });
-    if (formRef.current) {
-      formRef.current.reset();
+      MySwal.fire({
+        title: t("sent"),
+        text: t("message_sent"),
+        icon: "success",
+        confirmButtonText: t("close"),
+        confirmButtonColor: "#d46a00",
+        background: theme === "light" ? "rgb(244, 244, 244)" : "#050505",
+        color: theme === "light" ? "#545454" : "#f4f4f4",
+      });
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+    } catch (error) {
+      console.error(error);
     }
   }
 
@@ -36,18 +40,18 @@ const ContactForm: React.FC = () => {
       className="contact-form"
     >
       <label htmlFor="full-name">{t("name")}</label>
-      <input type="text" name="full-name" id="full-name" />
+      <input type="text" name="full-name" id="full-name" required />
 
       <label style={{ marginTop: "5%" }} htmlFor="email">
         {t("mail_address")}
       </label>
-      <input id="email" type="email" name="email" />
+      <input id="email" type="email" name="email" required />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
       <label style={{ marginTop: "5%" }} htmlFor="email">
         {t("message")}
       </label>
-      <textarea id="message" name="message" />
+      <textarea id="message" name="message" required />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
 
       <button
