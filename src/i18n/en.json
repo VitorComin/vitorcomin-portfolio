@@ -24,9 +24,10 @@
   "preview": "Preview",
   "code": "Code",
   "portfolio_image": "Vitor Comin portfolio",
-  "weather_radar_title": "Weather Radar",
-  "weather_radar_project": "Weather Radar Project",
+  "weather_radar_title": "Weather Radar Project",
   "weather_radar_description": "Basic Front-End personal project consuming the OpenWeatherAPI public API, with responsiveness, CSS transitions, automated tests, code architecture, and more.",
   "cimefer_group_site": "Cimefer Group Business Website",
-  "cimefer_group_description": "Professional and responsive landing page for Cimefer Group, developed in WordPress."
+  "cimefer_group_description": "Professional and responsive landing page for Cimefer Group, developed in WordPress.",
+  "simple_kanban_project": "Simple React Kanban Project",
+  "simple_kanban_description": "Personal Front-End project of a simple Kanban for task management, using the react-dnd-kit library for drag and drop."
 }

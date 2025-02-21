@@ -50,21 +50,31 @@ export const skillBadges = [
 
 export const projects = [
   {
-    imageSrc: "https://res.cloudinary.com/drenq2n4a/image/upload/v1739404087/tbqlpexki9fuvcxnkkbu.png",
+    imageSrc:
+      "https://res.cloudinary.com/drenq2n4a/image/upload/v1736469369/z0eqpd0na6d1a41hvjkh.png",
+    imageAlt: "weather_radar_title",
+    title: "weather_radar_title",
+    description: "weather_radar_description",
+    githubLink: "https://github.com/VitorComin/weather-radar",
+    previewLink: "https://vitorcomin.github.io/weather-radar/#/",
+  },
+  {
+    imageSrc:
+      "https://res.cloudinary.com/drenq2n4a/image/upload/v1740095525/ddidcfvggggwxt5ebnxk.png",
+    imageAlt: "simple_kanban_project",
+    title: "simple_kanban_project",
+    description: "simple_kanban_description",
+    githubLink: "https://github.com/VitorComin/simple-react-kanban",
+    previewLink: "https://vitorcomin.github.io/simple-react-kanban/",
+  },
+  {
+    imageSrc:
+      "https://res.cloudinary.com/drenq2n4a/image/upload/v1739404087/tbqlpexki9fuvcxnkkbu.png",
     imageAlt: "cimefer_group_site",
     title: "cimefer_group_site",
     description: "cimefer_group_description",
     previewLink: "https://www.cimefergroup.com.br",
   },
-  {
-    imageSrc:
-      "https://res.cloudinary.com/drenq2n4a/image/upload/v1736469369/z0eqpd0na6d1a41hvjkh.png",
-    imageAlt: "weather_radar_project",
-    title: "weather_radar_title",
-    description: "weather_radar_description",
-    githubLink: "https://github.com/VitorComin/weather-radar",
-    previewLink: "https://vitorcomin.github.io/weather-radar/#/",
-  }
 ];
 
 export const aboutPageImage =

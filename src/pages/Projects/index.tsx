@@ -10,8 +10,8 @@ const Projects: React.FC = () => {
     <section id="#projects" className={"pages-sections projects"}>
       <PageTitle title={t("projects")} />
       <div className={"pages-container projects-container"}>
-        {projects?.map((project) => (
-          <ProjectSlide project={project} />
+        {projects?.map((project, index) => (
+          <ProjectSlide key={index} project={project} />
         ))}
       </div>
     </section>
