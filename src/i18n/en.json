@@ -29,5 +29,5 @@
   "cimefer_group_site": "Cimefer Group Business Website",
   "cimefer_group_description": "Professional and responsive landing page for Cimefer Group, developed in WordPress.",
   "simple_kanban_project": "Simple React Kanban Project",
-  "simple_kanban_description": "Personal Front-End project of a simple Kanban for task management, using the react-dnd-kit library for drag and drop."
+  "simple_kanban_description": "Personal Front-End project of a simple Kanban for task management, using the react-dnd-kit library for drag and drop. Project focused on desktop because it is the library's specialty."
 }
