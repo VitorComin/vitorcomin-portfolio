@@ -21,7 +21,11 @@
 }
 
 .about-page-image img {
-  max-width: 500px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  transform: rotate(90deg);
+  border-radius: 37% 63% 65% 35% / 30% 34% 66% 70%;
 }
 
 .brown-line.under-text {
@@ -55,8 +59,9 @@
   }
 }
 
-@media (max-height: 550px) {
+@media (max-height: 650px) {
   .about-page-image img {
-    max-width: 250px;
+    width: 350px;
+    height: 350px;
   }
 }

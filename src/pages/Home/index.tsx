@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import HomeSocialMediaButtons from "../../components/HomeSocialMediaButtons";
-import { homePageImage } from "../../utils/configs";
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -14,7 +13,7 @@ const Home: React.FC = () => {
         <HomeSocialMediaButtons />
       </div>
       <div className="pages-container-columns home-page-image">
-        <img src={homePageImage} alt={t("portfolio_image")} />
+        <img src={"/imagem-vitor-home.jpg"} alt={t("portfolio_image")} />
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ const About: React.FC = () => {
           </div>
         </div>
         <div className="pages-container-columns about-page-image">
-          <img src={aboutPageImage} alt={t("portfolio_image")} />
+          <img src={"/imagem-vitor-sobre.jpeg"} alt={t("portfolio_image")} />
         </div>
       </div>
     </section>

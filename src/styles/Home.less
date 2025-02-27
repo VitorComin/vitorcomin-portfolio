@@ -46,7 +46,10 @@
 }
 
 .home-page-image img {
-  max-width: 500px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 55% 45% 62% 38% / 26% 30% 70% 74%;
 }
 
 @media (max-width: 1115px) {
@@ -61,12 +64,6 @@
 
   .home-page-image {
     padding-bottom: 5%;
-  }
-
-  .home-page-image img {
-    height: unset !important;
-    max-width: 70vw !important;
-    max-height: 40vh !important;
   }
 }
 
@@ -86,9 +83,10 @@
   }
 }
 
-@media (max-height: 550px) and (min-width: 1115px) {
+@media (max-height: 650px), (max-width: 1115px) {
   .home-page-image img {
-    max-width: 250px;
+    width: 250px;
+    height: 250px;
   }
 }
 
