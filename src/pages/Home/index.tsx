@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
 import HomeSocialMediaButtons from "../../components/HomeSocialMediaButtons";
+import { useState } from "react";
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <section id="#home" className={"home-section"}>
@@ -13,7 +15,12 @@ const Home: React.FC = () => {
         <HomeSocialMediaButtons />
       </div>
       <div className="pages-container-columns home-page-image">
-        <img src={"/imagem-vitor-home.jpg"} alt={t("portfolio_image")} />
+        <img
+          src={"/imagem-vitor-home.jpg"}
+          onLoad={() => setImageLoaded(true)}
+          style={{ opacity: imageLoaded ? 1 : 0 }}
+          alt={t("portfolio_image")}
+        />
       </div>
     </section>
   );
