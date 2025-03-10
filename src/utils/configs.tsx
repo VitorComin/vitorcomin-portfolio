@@ -67,15 +67,16 @@ export const projects = [
     githubLink: "https://github.com/VitorComin/simple-react-kanban",
     previewLink: "https://vitorcomin.github.io/simple-react-kanban/",
   },
-  {
-    imageSrc:
-      "https://res.cloudinary.com/drenq2n4a/image/upload/v1739404087/tbqlpexki9fuvcxnkkbu.png",
-    imageAlt: "cimefer_group_site",
-    title: "cimefer_group_site",
-    description: "cimefer_group_description",
-    previewLink: "https://www.cimefergroup.com.br",
-  },
 ];
+
+// {
+//   imageSrc:
+//     "https://res.cloudinary.com/drenq2n4a/image/upload/v1739404087/tbqlpexki9fuvcxnkkbu.png",
+//   imageAlt: "cimefer_group_site",
+//   title: "cimefer_group_site",
+//   description: "cimefer_group_description",
+//   previewLink: "https://www.cimefergroup.com.br",
+// }
 
 export const aboutPageImage =
   "https://res.cloudinary.com/drenq2n4a/image/upload/v1733845711/zavlxdpz5zpfemafdlsx.png";
