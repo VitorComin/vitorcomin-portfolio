@@ -19,6 +19,10 @@ export const skillBadges = [
     alt: "JavaScript",
   },
   {
+    src: "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white",
+    alt: "Angular",
+  },
+  {
     src: "https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white",
     alt: "CSS",
   },
