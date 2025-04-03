@@ -106,7 +106,7 @@ const Header: React.FC = () => {
             }}
           >
             {"<V"}{" "}
-            <span style={{ color: theme === "dark" ? "#ffd191" : "#D46A00" }}>
+            <span style={{ color: theme === "dark" ? "#ffe3bb" : "#D46A00" }}>
               C
             </span>{" "}
             {" />"}
@@ -122,7 +122,7 @@ const Header: React.FC = () => {
                   color:
                     activeSection === section?.id
                       ? theme === "dark"
-                        ? "#ffd191"
+                        ? "#ffe3bb"
                         : "#D46A00"
                       : "",
                 }}
