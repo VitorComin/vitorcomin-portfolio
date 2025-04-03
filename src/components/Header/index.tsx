@@ -8,7 +8,7 @@ import { useTheme } from "../../contexts/ThemeContext";
 const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [activeSection, setActiveSection] = useState("#home");
-  const { toggleTheme } = useTheme();
+  const { toggleTheme, theme } = useTheme();
   const headerRef = useRef<HTMLElement>(null);
   const buttonUpRef = useRef<HTMLButtonElement>(null);
 
@@ -105,7 +105,11 @@ const Header: React.FC = () => {
               scrollToTheTopOfThePage();
             }}
           >
-            {"<V"} <span style={{ color: "#D46A00" }}>C</span> {" />"}
+            {"<V"}{" "}
+            <span style={{ color: theme === "dark" ? "#ffd191" : "#D46A00" }}>
+              C
+            </span>{" "}
+            {" />"}
           </a>
         </div>
         <div style={{ display: "flex", overflow: "hidden" }}>
@@ -115,7 +119,12 @@ const Header: React.FC = () => {
                 key={index}
                 href={section?.id}
                 style={{
-                  color: activeSection === section?.id ? "#D46A00" : "",
+                  color:
+                    activeSection === section?.id
+                      ? theme === "dark"
+                        ? "#ffd191"
+                        : "#D46A00"
+                      : "",
                 }}
                 onClick={(e) => {
                   e.preventDefault();
