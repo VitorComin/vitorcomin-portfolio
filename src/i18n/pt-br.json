@@ -24,13 +24,13 @@
   "preview": "Prévia",
   "code": "Código",
   "portfolio_image": "Portfólio de Vitor Comin",
-  "weather_radar_title": "Projeto de Monitoramento Climático",
+  "weather_radar_title": "Projeto de Monitoramento Climático em React",
   "weather_radar_project": "Projeto Weather Radar",
   "weather_radar_description": "Projeto pessoal básico de Front-End consumindo API pública OpenWeatherAPI, com responsividade, transições CSS, testes automatizados, arquitetura de código e mais.",
   "cimefer_group_site": "Site Empresarial Cimefer Group",
   "cimefer_group_description": "Landing page profissional e responsiva para a Cimefer Group, desenvolvida em WordPress.",
-  "simple_kanban_project": "Projeto Kanban Simples em React",
-  "simple_kanban_description": "Projeto pessoal de Front-End de um kanban simples para gerenciamento de tarefas, utilizando a biblioteca react-dnd-kit para arrastar e soltar. Projeto focado em desktop por ser especialidade da biblioteca.",
-  "wms_portal_title": "WMS Portal em Angular",
+  "simple_kanban_project": "Projeto de Kanban Simples em React",
+  "simple_kanban_description": "Projeto pessoal de Front-End de um Kanban simples para gerenciamento de tarefas, utilizando a biblioteca react-dnd-kit para arrastar e soltar. Projeto focado em desktop por ser especialidade da biblioteca.",
+  "wms_portal_title": "Projeto de WMS em Angular",
   "wms_portal_description": "Projeto Front-End de uma plataforma de WMS utilizando o framework Angular com a biblioteca de componentes PO UI. Utilizando também um Mock API (mockapi.io) para fazer o CRUD."
 }
