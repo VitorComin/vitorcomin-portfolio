@@ -30,5 +30,7 @@
   "cimefer_group_site": "Site Empresarial Cimefer Group",
   "cimefer_group_description": "Landing page profissional e responsiva para a Cimefer Group, desenvolvida em WordPress.",
   "simple_kanban_project": "Projeto Kanban Simples em React",
-  "simple_kanban_description": "Projeto pessoal de Front-End de um kanban simples para gerenciamento de tarefas, utilizando a biblioteca react-dnd-kit para arrastar e soltar. Projeto focado em desktop por ser especialidade da biblioteca."
+  "simple_kanban_description": "Projeto pessoal de Front-End de um kanban simples para gerenciamento de tarefas, utilizando a biblioteca react-dnd-kit para arrastar e soltar. Projeto focado em desktop por ser especialidade da biblioteca.",
+  "wms_portal_title": "WMS Portal em Angular",
+  "wms_portal_description": "Projeto Front-End de uma plataforma de WMS utilizando o framework Angular com a biblioteca de componentes PO UI. Utilizando também um Mock API (mockapi.io) para fazer o CRUD."
 }

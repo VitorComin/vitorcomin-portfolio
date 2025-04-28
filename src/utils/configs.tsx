@@ -71,6 +71,15 @@ export const projects = [
     githubLink: "https://github.com/VitorComin/simple-react-kanban",
     previewLink: "https://vitorcomin.github.io/simple-react-kanban/",
   },
+  {
+    imageSrc:
+      "https://res.cloudinary.com/drenq2n4a/image/upload/v1745881614/wmahpoxzs6gras7v0yvc.png",
+    imageAlt: "wms_portal_title",
+    title: "wms_portal_title",
+    description: "wms_portal_description",
+    githubLink: "https://github.com/VitorComin/wms-portal",
+    previewLink: "https://vitorcomin.github.io/wms-portal/",
+  },
 ];
 
 // {
