@@ -14,16 +14,7 @@ const AboutMeLittleList: React.FC = () => {
         <GraduationIcon /> {t("education")}
       </li>
       <li>
-        <WorkIcon /> {t("work")}{" "}
-        <a
-          className="company-link"
-          href={"https://tiflux.com/"}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Tiflux
-        </a>
-        .
+        <WorkIcon /> {t("work")}
       </li>
       <li>
         <LocationIcon /> {t("location")}

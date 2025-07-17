@@ -16,7 +16,7 @@ const Home: React.FC = () => {
       </div>
       <div className="pages-container-columns home-page-image">
         <img
-          src={"/imagem-vitor-home.jpg"}
+          src={"/vitor-home-image.jpg"}
           onLoad={() => setImageLoaded(true)}
           style={{ opacity: imageLoaded ? 1 : 0 }}
           alt={t("portfolio_image")}
