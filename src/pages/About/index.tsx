@@ -3,7 +3,6 @@ import MySkills from "../../components/MySkills";
 import PageContentTitles from "../../components/PageContentTitles";
 import PageTitle from "../../components/PageTitle";
 import { useTranslation } from "react-i18next";
-import { aboutPageImage } from "../../utils/configs";
 
 const About: React.FC = () => {
   const { t } = useTranslation();

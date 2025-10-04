@@ -90,6 +90,3 @@ export const projects = [
 //   description: "cimefer_group_description",
 //   previewLink: "https://www.cimefergroup.com.br",
 // }
-
-export const aboutPageImage =
-  "https://res.cloudinary.com/drenq2n4a/image/upload/v1733845711/zavlxdpz5zpfemafdlsx.png";

@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface IPageTitle {
   title: string;
 }
@@ -17,4 +19,9 @@ export interface IProjectSlide {
 
 export interface IPageContentTitles {
   title: string;
+}
+
+export interface ICompanyLink {
+  href: string;
+  children: ReactNode;
 }
