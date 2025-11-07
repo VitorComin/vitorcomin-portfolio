@@ -7,8 +7,8 @@ export const sections = [
 
 export const skillBadges = [
   {
-    src: "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black",
-    alt: "React",
+    src: "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white",
+    alt: "Angular",
   },
   {
     src: "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
@@ -19,16 +19,28 @@ export const skillBadges = [
     alt: "JavaScript",
   },
   {
-    src: "https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white",
-    alt: "Angular",
-  },
-  {
     src: "https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white",
     alt: "CSS",
   },
   {
     src: "https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white",
     alt: "HTML",
+  },
+  {
+    src: "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black",
+    alt: "React",
+  },
+  {
+    src: "https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white",
+    alt: "Jest",
+  },
+  {
+    src: "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white",
+    alt: "Java",
+  },
+  {
+    src: "https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white",
+    alt: "Spring",
   },
   {
     src: "https://img.shields.io/badge/Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white",
@@ -41,15 +53,7 @@ export const skillBadges = [
   {
     src: "https://img.shields.io/badge/Postgres-336791?style=for-the-badge&logo=postgresql&logoColor=white",
     alt: "PostgreSQL",
-  },
-  {
-    src: "https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white",
-    alt: "Jest",
-  },
-  {
-    src: "https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white",
-    alt: "Vitest",
-  },
+  }
 ];
 
 export const projects = [
