@@ -4,7 +4,7 @@ export interface IPageTitle {
   title: string;
 }
 
-export interface IProject {
+export interface ICard {
   imageSrc: string;
   imageAlt: string;
   title: string;
@@ -13,8 +13,8 @@ export interface IProject {
   previewLink?: string;
 }
 
-export interface IProjectSlide {
-  project: IProject;
+export interface ICardSlide {
+  card: ICard;
 }
 
 export interface IPageContentTitles {

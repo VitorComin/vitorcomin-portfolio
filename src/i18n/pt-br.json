@@ -2,13 +2,14 @@
   "home": "Início",
   "about": "Sobre",
   "projects": "Projetos",
+  "publications": "Publicações",
   "contact": "Contato",
   "hello": "Olá visitante!",
   "my_name": "Meu nome é Vitor Comin",
   "developer": "Desenvolvedor Full-Stack",
   "about_me": "Sobre mim",
   "little_about_me": "Um pouco sobre mim:",
-  "about_me_text": "Vitor Comin, 23 anos, é apaixonado por tecnologia e encontra nela um universo de possibilidades que o inspira a sonhar e crescer. Com dedicação e motivação, busca se desenvolver continuamente, encarando cada desafio como uma oportunidade para avançar ainda mais. Seu amor pelo que faz e o desejo constante de evolução são as forças que impulsionam sua entrega e sua dedicação todos os dias.",
+  "about_me_text": "Vitor Gabriel Comin, 23 anos, é apaixonado por tecnologia e encontra nela um universo de possibilidades que o inspira a sonhar e crescer. Com dedicação e motivação, busca se desenvolver continuamente, encarando cada desafio como uma oportunidade para avançar ainda mais. Seu amor pelo que faz e o desejo constante de evolução são as forças que impulsionam sua entrega e sua dedicação todos os dias.",
   "education": "Bacharel em Sistemas de Informação pela ",
   "work": "Atua como Desenvolvedor Full-Stack há mais de 2 anos. Atualmente na ",
   "location": "Joinville, Santa Catarina. Brasil.",
@@ -32,5 +33,7 @@
   "simple_kanban_project": "Projeto de Kanban Simples em React",
   "simple_kanban_description": "Projeto pessoal de Front-End de um Kanban simples para gerenciamento de tarefas, utilizando a biblioteca react-dnd-kit para arrastar e soltar. Projeto focado em desktop por ser especialidade da biblioteca.",
   "wms_portal_title": "Projeto de WMS em Angular",
-  "wms_portal_description": "Projeto Front-End de uma plataforma de WMS utilizando o framework Angular com a biblioteca de componentes PO UI. Utilizando também um Mock API (mockapi.io) para fazer o CRUD."
+  "wms_portal_description": "Projeto Front-End de uma plataforma de WMS utilizando o framework Angular com a biblioteca de componentes PO UI. Utilizando também um Mock API (mockapi.io) para fazer o CRUD.",
+  "state_management_article_title": "Impacto do Gerenciamento de Estado com a Ferramenta Context API em Single Page Applications",
+  "state_management_article_description": "Um estudo do impacto da Context API no desempenho de SPAs em React com diferentes níveis de componentização."
 }

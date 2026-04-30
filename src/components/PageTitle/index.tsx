@@ -1,4 +1,4 @@
-import { IPageTitle } from "../../types";
+import { type IPageTitle } from "../../types";
 
 const PageTitle: React.FC<IPageTitle> = ({ title }) => {
   return (

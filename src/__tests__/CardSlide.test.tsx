@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { IProject } from "../types";
-import ProjectSlide from "../components/ProjectSlide";
+import { type ICard } from "../types";
+import CardSlide from "../components/CardSlide";
 import userEvent from "@testing-library/user-event";
 
 jest.mock("react-i18next", () => ({
@@ -9,7 +9,7 @@ jest.mock("react-i18next", () => ({
   }),
 }));
 
-const project: IProject = {
+const project: ICard = {
   title: "Test Project",
   description: "This is a test project description.",
   imageSrc: "http://example.com/image.jpg",
@@ -18,13 +18,13 @@ const project: IProject = {
   previewLink: "http://example.com/preview",
 };
 
-describe("<ProjectSlide />", () => {
+describe("<CardSlide />", () => {
   test("should render project details correctly", () => {
-    render(<ProjectSlide project={project} />);
+    render(<CardSlide card={project} />);
 
     const projectTitle = screen.getByText("Test Project");
     const projectDescription = screen.getByText(
-      "This is a test project description."
+      "This is a test project description.",
     );
     const projectImage = screen.getByAltText("Test Project Image");
 
@@ -34,7 +34,7 @@ describe("<ProjectSlide />", () => {
   });
 
   test("should call window.open when clicking on one of the buttons", async () => {
-    render(<ProjectSlide project={project} />);
+    render(<CardSlide card={project} />);
 
     const openMock = jest
       .spyOn(window, "open")

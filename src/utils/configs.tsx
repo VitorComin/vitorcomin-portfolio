@@ -2,6 +2,7 @@ export const sections = [
   { id: "#home", label: "home" },
   { id: "#about", label: "about" },
   { id: "#projects", label: "projects" },
+  { id: "#publications", label: "publications" },
   { id: "#contact", label: "contact" },
 ];
 
@@ -53,7 +54,7 @@ export const skillBadges = [
   {
     src: "https://img.shields.io/badge/Postgres-336791?style=for-the-badge&logo=postgresql&logoColor=white",
     alt: "PostgreSQL",
-  }
+  },
 ];
 
 export const projects = [
@@ -83,6 +84,17 @@ export const projects = [
     description: "wms_portal_description",
     githubLink: "https://github.com/VitorComin/wms-portal",
     previewLink: "https://vitorcomin.github.io/wms-portal/",
+  },
+];
+
+export const publications = [
+  {
+    imageSrc:
+      "https://res.cloudinary.com/drenq2n4a/image/upload/v1777508620/artig_mlyxpd.png",
+    imageAlt: "state_management_article_title",
+    title: "state_management_article_title",
+    description: "state_management_article_description",
+    previewLink: "https://doi.org/10.5753/reic.2026.7413",
   },
 ];
 

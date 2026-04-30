@@ -2,6 +2,7 @@ import About from "../../pages/About";
 import Contact from "../../pages/Contact";
 import Home from "../../pages/Home";
 import Projects from "../../pages/Projects";
+import Publications from "../../pages/Publications";
 import Header from "../Header";
 
 const Layout: React.FC = () => {
@@ -11,6 +12,7 @@ const Layout: React.FC = () => {
       <Home />
       <About />
       <Projects />
+      <Publications />
       <Contact />
     </>
   );

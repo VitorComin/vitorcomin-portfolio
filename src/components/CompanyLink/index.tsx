@@ -1,4 +1,4 @@
-import { ICompanyLink } from "../../types";
+import { type ICompanyLink } from "../../types";
 
 const CompanyLink: React.FC<ICompanyLink> = ({ href, children }) => {
   return (

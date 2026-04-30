@@ -2,13 +2,14 @@
   "home": "Home",
   "about": "About",
   "projects": "Projects",
+  "publications": "Publications",
   "contact": "Contact",
   "hello": "Hello there!",
   "my_name": "My name is Vitor Comin",
   "developer": "Full-Stack Developer",
   "about_me": "About me",
   "little_about_me": "A little about me:",
-  "about_me_text": "Vitor Comin, 23 years old, is passionate about technology and finds in it a universe of possibilities that inspires him to dream and grow. With dedication and motivation, he strives to continuously develop himself, viewing each challenge as an opportunity to move forward even more. His love for what he does and his constant desire for growth are the driving forces behind his commitment and dedication every day.",
+  "about_me_text": "Vitor Gabriel Comin, 23 years old, is passionate about technology and finds in it a universe of possibilities that inspires him to dream and grow. With dedication and motivation, he strives to continuously develop himself, viewing each challenge as an opportunity to move forward even more. His love for what he does and his constant desire for growth are the driving forces behind his commitment and dedication every day.",
   "education": "Bachelor's degree in Information Systems from ",
   "work": "Works as a Full-Stack Developer for over 2 years. Currently at ",
   "location": "Joinville, Santa Catarina. Brazil.",
@@ -31,5 +32,7 @@
   "simple_kanban_project": "Simple React Kanban Project",
   "simple_kanban_description": "Personal Front-End project of a simple Kanban for task management, using the react-dnd-kit library for drag and drop. Project focused on desktop because it is the library's specialty.",
   "wms_portal_title": "Angular WMS Portal",
-  "wms_portal_description": "Front-End project of a WMS platform using the Angular framework with the PO UI component library. Also using a Mock API (mockapi.io) to perform CRUD operations."
+  "wms_portal_description": "Front-End project of a WMS platform using the Angular framework with the PO UI component library. Also using a Mock API (mockapi.io) to perform CRUD operations.",
+  "state_management_article_title": "Impact of State Management Using the Context API in Single Page Applications",
+  "state_management_article_description": "A study on the impact of the Context API on React SPA performance across different componentization levels."
 }
